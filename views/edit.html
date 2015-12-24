@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<p>uppercase,lowercase大小写转换</p><br />
+		{{"my name is lvbaolin"|uppercase}}<br />
+		<p>json格式化</p><br />
+		{{ {foo: "bar", baz: 23} | json }}<br />
+		<p>date格式化</p><br />
+		{{ 1304375948024 | date:"yyyy-MM-dd hh:mm:ss" }}<br />
+		<p>filter查找</p><br />
+		{{ [{"age": 20,"id": 10,"name": "iphone"},{"age": 12,"id": 11,"name": "sunm xing"},{"age": 44,"id": 12,"name": "test abc"}] | filter:'s'}}<br />
+	</body>
+</html>

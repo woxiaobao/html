@@ -1,0 +1,38 @@
+<div ng-controller="tags">
+    <tags-input ng-model="tags" min-length="2"  min-tags="3"  max-tags="5"></tags-input>
+    <p>Model: {{tags}}</p>
+
+
+
+    <tags-input ng-model="superheroes" 
+                placeholder="Add a superhero" 
+                replace-spaces-with-dashes="false"
+                add-from-autocomplete-only="true"
+                on-tag-added="tagAdded($tag)"
+                on-tag-removed="tagRemoved($tag)">
+
+      <auto-complete source="loadSuperheroes($query)" 
+                     min-length="0" 
+                     debounce-delay="0"
+                     max-results-to-show="10"></auto-complete>
+    </tags-input>
+    <p>Model: {{superheroes}}</p>
+    <p>Log: {{log}}</p>
+
+
+
+    <form name="form">
+      <tags-input name="tags1"
+                  ng-model="tags1" 
+                  add-on-blur="false"
+                  min-tags="3"
+                  max-tags="5"
+                  allow-leftover-text="false">
+      </tags-input>
+      <p>Model: {{tags1}}</p>
+      <p>$pristine: {{form.tags1.$pristine}}</p>
+      <p>$dirty: {{form.tags1.$dirty}}</p>
+      <p>$valid: {{form.tags1.$valid}}</p>
+      <p>$error: {{form.tags1.$error}}</p>
+    </form>
+  </div>

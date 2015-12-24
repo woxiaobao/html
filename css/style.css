@@ -1,0 +1,71 @@
+﻿body{font-family:"微软雅黑"}
+header{border-bottom:1px solid #F1F1F1; height:70px;}
+header.bgc{ background-color:#F1F1F1;}
+header .head{padding-top:10px;}
+header .btn-primary{margin-top:5px;}
+.pt10{ padding-top:10px;}
+.pt20{ padding-top:20px;}
+.pt30{ padding-top:30px;}
+
+.pb10{ padding-bottom:10px;}
+.pb20{ padding-bottom:20px;}
+.pb30{ padding-bottom:30px;}
+
+.mt10{ margin-top:10px;}
+.mt20{ margin-top:20px;}
+.mt30{ margin-top:30px;}
+.mt40{ margin-top:40px;}
+.mt50{ margin-top:50px;}
+
+.reg .col-xs-6{ padding-top:20px;}
+.reg .col-xs-5{ height:400px; padding-top:100px;}
+.reg .form-horizontal .form-group{ padding:8px 0;}
+.reg-dashed{ border-left:1px dashed #c1c1c1}
+.b-b-c{ border-bottom:1px dashed #c1c1c1}
+.jws-nav{ list-style:none; padding-top:10px;}
+.jws-nav li a{padding:15px 30px; font-size:16px; text-decoration:none;} 
+.jws-nav li a:hover{ border-bottom:3px solid #1DACEE;}
+.user-nav {border-left:1px solid #ddd; list-style:none; margin-top:5px; height:30px;}
+.user-nav img{height:30px; width:30px; border-radius:15px;}
+.user-nav a,.user-nav a:hover{text-decoration: none;}
+.user-nav .dropdown-menu{ width:100%; font-size:12px; top:130% ;}
+
+.section{width:230px; background-color:#f9f9f9; border:1px solid #f1f1f1; float:left;}
+.section dl dt{ background-color:#e2e2e2; margin-bottom:1px;}
+.section dl dt,.section dl dd{ padding:10px 0;}
+.section dl dt a,.section dl dd a{color:#333;}
+.section dl dt.active ,.section dl dd.active{ background-color:#1DACEE; color:#fff; } 
+.section dl dt.active a,.section dl dd.active a{ color:#fff;}
+.content{margin-left:230px;}
+.content .breadcrumb{border-radius:0px; background-color:#f9f9f9; border:1px solid #f1f1f1;  border-left:none;}
+.thumbnail{position:relative;}
+.thumbnail .op-text{ display:none; text-align:center; line-height: 15em;}
+.thumbnail:hover,.thumbnail:active,.thumbnail:focus{text-decoration:none}
+.thumbnail h6{overflow:hidden; text-overflow: ellipsis; white-space: nowrap;}
+.thumbnail p{color:red; }
+.thumbnail:hover .op-text{position:absolute; top:0; left:0; right:0; bottom:0;  background-color:rgba(0, 0, 0, 0.55); display:inline-block;}
+
+
+.table .btn{ border-radius:0px; }
+.table .glyphicon{ vertical-align:text-top; margin-right:3px;}
+
+.form-horizontal .control-label{ font-weight:normal;}
+.step-solid{ border-left:1px solid #E8E8E8;}
+.step-1-open{ border:1px dashed #c1c1c1; padding:10px; width:350px; line-height:35px;}
+
+.picNo{ background: url('../images/picNo.jpg') #f1f1f1 no-repeat center; display: inline-block;}
+
+footer{ background-color:#F1F1F1; margin-top:40px; padding:20px 0; color:#767676}
+footer p{ line-height:30px;}
+footer a{ color:#767676; padding:0px 15px;}
+.uploadBtn.has-error{ position: relative; border:1px #d74f5a solid!important; box-shadow: 0 0 5px #d74f5a !important;}
+.has-error .errormsg{ position: absolute; right:-100px; width:100px; text-align:left; top:0; }
+.has-error input{ border-color: #d74f5a !important; background:url("../images/error.png") no-repeat right; box-shadow: 0 0 5px #d74f5a !important;}
+input.success {  background:url("../images/success.png") no-repeat right; }
+
+
+.popover-content{ color:#d74f5a; font-size: 14px;}
+.btn-primary {color: #fff; background-color: #1DACEE; border-color: #1DACEE;}
+.btn-primary.focus,.btn-primary:focus{color:#fff; background-color:#119CDF; border-color:#119CDF;}
+.btn-primary:hover{color:#fff;background-color:#119CDF; border-color:#119CDF;}
+.btn-primary.active.focus,.btn-primary.active:focus,.btn-primary.active:hover,.btn-primary:active.focus,.btn-primary:active:focus,.btn-primary:active:hover{color:#fff;background-color:#119CDF;border-color:#119CDF}

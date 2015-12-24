@@ -1,0 +1,49 @@
+<!doctype html>
+ <html lang="zh-cn" ng-app="study">
+ <head>
+ 	<meta charset="utf-8">
+ 	<!-- 新 Bootstrap 核心 CSS 文件 -->
+ 	<link rel="stylesheet" href="css/jquery-ui-1.9.2.custom.min.css">
+<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/ng-tags-input.min.css" />
+    <link rel="stylesheet" href="css/ng-tags-input.bootstrap.min.css" />
+<link rel="stylesheet" href="css/style.css">
+ 	
+ </head>
+ <body>
+     <div ng-controller="testCtrl">
+         <label>Name:</label>
+         <input type="text" ng-model="yourName" placeholder="Enter a name here">
+         <button ng-click="clearInputValue()">Clear Input Value</button>
+         <hr>
+         <h1>Hello {{yourName}}!</h1>
+
+     </div>
+     
+     <a href="#/list/1">进入到list</a>
+     <a href="#/upload">图片上传</a>
+     <a href="#/rest">rest测试</a>
+     <a href="#/test">test--</a>
+     <a href="#/ngtags">ng-tags--</a>
+     <a href="#/study">学习study</a>
+     <a href="#/sortable">jqueryui Sortable</a>
+     
+     <div ng-view>
+                  <!-- 模板插在此处 -->
+     </div>
+     
+     <div ng-include="'views/include.html'"></div>
+     
+     
+     <script src="js/libs/jquery-1.9.1.min.js"></script>
+     <script src="js/libs/jquery-ui-1.9.2.custom.js"></script>
+     <script src="http://cdn.bootcss.com/angular.js/1.4.2/angular.min.js"></script>
+     <script src="js/angular-1.2.20/angular-route.js"></script>
+     <script src="js/libs/ng-tags-input.min.js"></script>
+     <script src="js/libs/ng-file-upload.min.js"></script>
+     <script src="js/libs/ng-file-upload-shim.js"></script>
+     <script src="js/routes/appRoute.js"></script>
+     <script src="js/main.js"></script>
+     <script src="js/test.js"></script>
+ </body>
+</html>
