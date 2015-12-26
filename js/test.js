@@ -1,5 +1,6 @@
 	app.controller('test',function($scope,$http,$routeParams){
 		console.log("test---！");
+		console.log(URL.upload);
 		var url="http://127.0.0.1:8090/studys/util";
 		$scope.ceshi=function(){
 			$http.get(url).success(function(data) {

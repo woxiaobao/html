@@ -1,7 +1,12 @@
- 	app.controller('testCtrl',function($scope,$http,$routeParams){
-		console.log("main加载！");
+ 	app.controller('applicat',function($scope,$http,$routeParams){
+		console.log(URL.upload);
 	})
  	
+ 	
+ 	.controller('testCtrl',function($scope,$http,$routeParams){
+		console.log("main加载！");
+		console.log(URL.upload);
+	})
  	.controller('sortable',function($scope,$http,$timeout,$httpParamSerializer){
  		var url="http://localhost:8080/qyhaomarket/category/ceshi";
  		var sortable=$( "#sortable" );
@@ -19,7 +24,7 @@
 				t[i]=id;
 //				console.log(id);
 			}
-			$http.get(url+"?sort="+t).success(function(data) {
+			$http.get(URL.sort+"?sort="+t).success(function(data) {
               console.log(data);
             }).error(function(error){
             	console.log(error);
@@ -36,7 +41,7 @@
  		$scope.book={};
  		
  		$scope.Utilget=function(){
-			$http.get(url+"/list").success(function(data) {
+			$http.get(URL.upload).success(function(data) {
 				$scope.data=data;
               console.log(data);
             }).error(function(error){

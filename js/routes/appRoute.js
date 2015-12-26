@@ -1,9 +1,9 @@
-var app=angular.module("study", ['ngRoute','ngFileUpload','ngTagsInput']);
+var app=angular.module("applicat", ['ngRoute','ngFileUpload','ngTagsInput']);
 
 app.config(['$routeProvider',function ($routeProvider) {  
     $routeProvider  
         .when('/list', {  
-            templateUrl: 'views/edit.html'
+            templateUrl: 'views/edit.html',
         })  
         .when('/list/:id', {  
             templateUrl: 'views/list.html',  
