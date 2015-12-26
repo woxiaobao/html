@@ -1,5 +1,6 @@
 var API_PATH = "";
-var  LOCAL_PATH = "http://127.0.0.1:8088/stuapi";
+var LOCAL_PATH = "http://127.0.0.1:8088/stuapi";
+var READ_IMAGE="http://127.0.0.1:8008";//图片服务
 
 var URL={
 	upload : LOCAL_PATH+"/file/upload",//图片上传

@@ -2,11 +2,11 @@
 
 
 
-	<div class="button ng-untouched ng-valid ng-dirty" ng-model="files" ngf-select ngf-change="upload($files,'logo')" style="width:120px;height:120px;">
-		<img  ng-src="{{qyhao.logo}}" class="picNo" style="width:120px;height:120px;">
+	<div class="button ng-untouched ng-valid ng-dirty" ng-model="files" ngf-select ngf-change="upload($files)" style="width:120px;height:120px;">
+		<img  ng-src="{{logo}}" class="picNo" style="width:120px;height:120px;">
 		<input type="hidden" name="logo" id="avatar" ng-model="qyhao.logo" class="editable img-responsive">
 	</div>
-
+{{logo}}
 			<div class="col-md-offset-2">
 				<input class="btn btn-primary" id="saveButton" type="submit" value="保存"  ng-disabled="form.$invalid"  />
 				<input class="btn btn-primary" id="saveButton" type="button" ng-click="ceshi()" value="ceshi"   />

@@ -81,15 +81,15 @@
 	    		$scope.data=data;
 	    	})
 		}
-		$scope.upload = function (files,ngName,index) {
-			console.log(ngName);
+		$scope.upload = function (files) {
 
 		        if (files && files.length) {
 		            for (var i = 0; i < files.length; i++) {
 		                var file = files[i];
 		                console.log(file);
 		                Upload.upload({
-		                    url: "http://127.0.0.1:8088/api/util/file/upload",
+		                    //url: "http://127.0.0.1:8080/qyhaomarket/image/mUpload",
+		                    url:URL.upload,
 		                   // fields: {'username': $scope.username},
 		                    file: file,
 		                    fileFormDataName: 'myFile'
@@ -99,9 +99,8 @@
 		                }).success(function (data, status, headers, config) {
 		                	$timeout(function() {
 		                    	var imgJson = angular.fromJson(data);
-		                    	console.log(imgJson);
-		                    	if(ngName=='logo')$scope.qyhao.logo = imgJson.fileUrl;
-		                    	if(ngName=='img')$scope.qyhao.img = imgJson.fileUrl;
+		                    	console.log(imgJson.file);
+		                    	$scope.logo = $scope.urlStr(imgJson.file);
 		       
 		                    });
 		                }).error(function (data, status, headers, config) {
@@ -113,8 +112,8 @@
 		    
 		    $scope.urlStr = function(tempurl){
 		    	if(tempurl && tempurl!=null){
-			    	if(tempurl.indexOf('/temp/')>-1){
-			    		tempurl = "http://127.0.0.1:8080/"+tempurl.substring(tempurl.indexOf('/temp/'),tempurl.length);
+			    	if(tempurl.indexOf('/images/')>-1){
+			    		tempurl = READ_IMAGE+""+tempurl.substring(tempurl.indexOf('/images/'),tempurl.length);
 			    	}else tempurl = API_PATH+tempurl;
 		    	}else{
 		    	}
