@@ -253,7 +253,7 @@
       	data.username="xiaobao";
       	data.password="123456";
         $http({
-          url:"http://127.0.0.1:8084/api/login",
+          url:URL.ceshi,
           //url:"http://127.0.0.1:8080/qyhaomarket/goods/ceshi",
           method:"post",
           data:$.param(data),
