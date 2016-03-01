@@ -40,6 +40,16 @@
  		var url="http://127.0.0.1:8088/studys/util";
  		$scope.book={};
  		
+ 		$scope.weixin_token=function(){
+			$http.get(WX_TOKEN).success(function(data) {
+				$scope.data=data;
+              console.log(data);
+            }).error(function(error){
+            	console.log(error);
+            });
+		}
+ 		
+ 		
  		$scope.Utilget=function(){
 			$http.get(URL.upload).success(function(data) {
 				$scope.data=data;
@@ -128,7 +138,7 @@
 		
 		
 		$scope.getTest=function(){
-			$http.get(url).success(function(data) {
+			$http.get(URL_SPRING).success(function(data) {
 				$scope.data=data;
               console.log(data);
             }).error(function(error){
@@ -150,9 +160,9 @@
 		
 		$scope.postTest=function(){
 			$http({
-					url :url,
+					url :URL_SPRINT_STRING,
 					method :"post",
-					data :{"title":"hahahahah"}
+					data :{}
 					//params:{"title":"woshixiaobao"},params这个参数会把参数添加到URL后面
 				}) 
 				.success(function(data,status){
