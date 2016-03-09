@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<!--第一部： jq-->
+<script type="text/javascript" src="../lib/jquery-1.9.0.min.js"></script>
+<!--第3部： 样式-->
+<script type="text/javascript" src="../source/jquery.fancybox.js"></script>
+<!--第4部： 样式-->
+<link rel="stylesheet" type="text/css" href="../source/jquery.fancybox.css" media="screen" />
+
+<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+			 *  Simple image gallery.
+			 */
+
+			$('.fancybox').fancybox();
+			
+			})
+			
+</script>
+
+</head>
+<body>
+<div style="height:200px; width:800px; border:2px solid red;">
+  <ul style="list-style:none; float:left; height:140px; margin-left:50px; padding-top:34px; width:670px; border:2px solid green; padding-left:0px;">
+  
+    <li style="float:left; border:2px solid blue;">
+    <a class="fancybox" data-fancybox-group="gallery" title="this is so beautiful"  href="img/xx.jpg"> <img src="img/img_a.jpg" style="height:150xp; width:150px;"  alt=""/> </a> 
+    </li>
+    <li style="float:left; border:2px solid blue; margin-left:5px;"> 
+    <a class="fancybox"   title="this is so beautiful" href="img/img_b.jpg"> <img src="img/img_b.jpg"  style="height:150xp; width:150px;" alt=""/> </a> 
+     </li>
+    <li style="float:left; border:2px solid blue;  margin-left:5px;">
+     <a class="fancybox" data-fancybox-group="Buttion" title="this is so beautiful"  href="img/img_c.jpg"> <img src="img/img_c.jpg" style="height:150xp; width:150px;"  alt=""/> </a>
+     </li>
+    <li style="float:left; border:2px solid blue;  margin-left:5px;">
+     <a class="fancybox" data-fancybox-group="gallery" title="this is so beautiful"  href="img/img_d.jpg"> <img src="img/img_d.jpg" style="height:150xp; width:150px;"  alt="" /> </a>
+    </li>
+    
+  </ul>
+</div>
+</body>
+</html>
