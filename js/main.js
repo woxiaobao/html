@@ -140,7 +140,7 @@
 		$scope.getTest=function(){
 			$http.get(URL_SPRING).success(function(data) {
 				$scope.data=data;
-              console.log(data);
+              console.log(data.items);
             }).error(function(error){
             	console.log(error);
             });
@@ -148,7 +148,7 @@
 		
 		$scope.putTest=function(){
 			$http.put(
-				url+"/2", 
+				URL_SPRINT_STRING, 
 				{"title":"wwwwwwwwwwwwww"}
 			).success(function(data){
 				$scope.data=data;
