@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>不同的效果</title>
+<!--第一部： jq-->
+<script type="text/javascript" src="../lib/jquery-1.9.0.min.js"></script>
+<!--第3部： 样式-->
+<script type="text/javascript" src="../source/jquery.fancybox.js"></script>
+<!--第4部： 样式-->
+<link rel="stylesheet" type="text/css" href="../source/jquery.fancybox.css" media="screen" />
+<script type="text/javascript">
+//这里展示了 它 最常见的 四种  模式啊
+ $(document).ready(function() {
+       
+
+	   $('.fancybox-effects-a').fancybox({
+	          helpers:{
+			        title:{
+					   type:'outside'
+					},
+					overlay:{
+					  speedOut:0
+					}
+			  }
+	   });
+	   
+	     $('.fancybox-effects-b').fancybox({
+	            openEffect: 'none',
+				closeEffect: 'none',
+				
+				 helpers:{
+				          title:{
+						        type: 'over'
+                          }
+				 }
+
+	   });
+	   
+	   $('.fancybox-effects-c').fancybox({
+	      wrapCSS :'fancybox-custom',
+		  closeClick: true,
+		  openEffect:'none',
+		     helpers:{
+			   title:{
+			       type:'inside'
+			   },
+			    overlay:{
+				    css:{
+					      'background':'rgba(238,238,238,0.85)'
+					}
+				}
+			 
+			 }
+	   });
+	   
+	   $('.fancybox-effects-d').fancybox({
+	        padding:0,
+			openEffect: 'elastic',
+			openSpeed:150,
+			closeClick:true,
+			helpers:{
+			   overlay:{
+					  speedOut:0
+					}
+			}
+	   
+	   
+	   })
+	   
+	   
+	   
+ })
+ </script>
+<style type="text/css">
+		.fancybox-custom .fancybox-skin {
+			box-shadow: 0 0 50px #222;
+		}
+	</style>
+</head>
+<body>
+
+<div style="height:200px; width:800px; border:2px solid red;">
+  <ul style="list-style:none; float:left; height:140px; margin-left:50px; padding-top:34px; width:670px; border:2px solid green; padding-left:0px;">
+  
+    <li style="float:left; border:2px solid blue;">
+    <a class="fancybox-effects-a" title="this is prety good"  href="img/img_b.jpg"> <img src="img/img_b.jpg" style="height:150xp; width:150px;"  alt=""/> </a> 
+    </li>
+    <li style="float:left; border:2px solid blue; margin-left:5px;"> 
+    <a class="fancybox-effects-b"  title="this is prety good"   href="img/img_b.jpg"> <img src="img/img_b.jpg"  style="height:150xp; width:150px;" alt=""/> </a> 
+     </li>
+    <li style="float:left; border:2px solid blue;  margin-left:5px;">
+     <a class="fancybox-effects-c"  title="this is prety good"   href="img/img_b.jpg"> <img src="img/img_b.jpg" style="height:150xp; width:150px;"  alt=""/> </a>
+     </li>
+    <li style="float:left; border:2px solid blue;  margin-left:5px;">
+     <a class="fancybox-effects-d" title="this is prety good"   href="img/img_b.jpg"> <img src="img/img_b.jpg" style="height:150xp; width:150px;"  alt="" /> </a>
+    </li>
+    
+  </ul>
+</div>
+
+</body>
+</html>
